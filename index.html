@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WebVR for SoCraTes BE</title>
+    <meta name="description" content=">WebVR for SoCraTes BE">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #ECECEC">
+      <a-assets>
+        <a-asset-item id="myModelObj" src="logo.obj"></a-asset-item>
+        <a-asset-item id="myModelMtl" src="logo.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-entity obj-model="obj: #myModelObj; mtl: #myModelMtl" position="0 -60 -100">
+        <a-animation easing="linear" attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
